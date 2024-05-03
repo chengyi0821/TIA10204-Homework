@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class Homework3_3 {
 	public static void main(String[] args) {
 		for (int i = 1; i < 50; i++) {
-			System.out.print(i + " ");
+			System.out.print(i + "\t");
+			if(i % 6 ==0) {
+				System.out.println();
+			}
 		}
 		System.out.println();
 		Scanner sc = new Scanner(System.in);
@@ -13,12 +16,20 @@ public class Homework3_3 {
 		int num = sc.nextInt();
 		int random, q = 0, passNum = 0, w = 0, p = 0;
 		int[] i = new int[49];
+		System.out.println("可以選的數字有:");
 		for (int r = 1; r < 50; r++) {
 			if (r / 10 != num && r % 10 != num) {
 				i[r - passNum - 1] = r;
+				p++;
+				System.out.print(r + "\t");
+				if (p % 6 == 0) {
+					System.out.println();
+				}
 			} else
 				passNum++;
 		}
+		System.out.println("\n=======================================");
+		System.out.println("祝您中大獎!!");
 		while (w < 6) {
 			random = (int) (Math.random() * (48 - passNum));
 			System.out.print(i[random] + " ");
@@ -27,7 +38,7 @@ public class Homework3_3 {
 			i[(48 - passNum)] = p;
 			passNum++;
 			w++;
-
+			sc.close();
 		}
 	}
 }

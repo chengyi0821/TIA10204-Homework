@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Homework4_5 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("請輸入年,月,日");
+		System.out.println("請輸入年、月、日");
 		int year = sc.nextInt();
 		int mouth = sc.nextInt();
 		int day = sc.nextInt();
@@ -24,5 +24,6 @@ public class Homework4_5 {
 			t = t + day;
 			System.out.print("輸入的日期為該年第" + t + "天");
 		}
+		sc.close();
 	}
 }
