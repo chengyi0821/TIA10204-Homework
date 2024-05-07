@@ -26,7 +26,7 @@ public abstract class Hero {
 	public void move() {
 		move.move();
 	}
-	public void defind() {
+	public void defend() {
 		defend.defend();
 	}
 }
