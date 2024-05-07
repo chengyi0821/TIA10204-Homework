@@ -1,14 +1,15 @@
 package hw5_2;
 public class RoleGameTest {
-
 	public static void main(String[] args) {
-		Hero[] h = new Hero[2];
-		h[0]= new SwordMan("亞拉岡", 1, 0);
-		h[1]= new ArrowMan("勒苟拉斯", 1, 0);
-		for(int i = 0; i <= 1 ; i++) {
-			h[i].attack();
-			h[i].display();
-			System.out.println("================");
-		}
+		Hero justin = new ArrowMan("賈斯丁",1,0);
+		Hero bieber = new SwordMan("比伯",1,0);
+		
+		justin.attack();
+		justin.move();
+		justin.defend();
+		
+		bieber.attack();
+		bieber.move();
+		bieber.defend();
 	}
 }
