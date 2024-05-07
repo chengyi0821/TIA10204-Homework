@@ -11,7 +11,6 @@ public class Homework5_1 {
 		starSquare(width, height);
 		sc.close();
 	}
-
 	public static void starSquare(int width, int height) {
 		for (int i = 0; i < height; i++) {
 			for (int j = 0; j < width; j++) {

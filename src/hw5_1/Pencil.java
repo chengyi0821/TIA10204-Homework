@@ -1,9 +1,8 @@
 package hw5_1;
 
 public class Pencil extends Pen {
-	public Pencil() {
-	};
-
+	
+	public Pencil() {};
 	public Pencil(String brand, double price) {
 		super(brand, price);
 	}
@@ -14,6 +13,7 @@ public class Pencil extends Pen {
 		System.out.println("削鉛筆再寫");
 	}
 
+	@Override
 	public double getPrice() {
 		return super.getPrice() * 0.8;
 

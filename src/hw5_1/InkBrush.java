@@ -1,9 +1,8 @@
 package hw5_1;
 
 public class InkBrush extends Pen {
-	public InkBrush() {
-	};
-
+	
+	public InkBrush() {};
 	public InkBrush(String brand, double price) {
 		super(brand, price);
 	}

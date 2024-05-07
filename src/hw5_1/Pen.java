@@ -4,9 +4,7 @@ public class Pen {
 	private String brand;
 	private double price;
 
-	public Pen() {
-	}
-
+	public Pen() {}
 	public Pen(String brand, double price) {
 		this.brand = brand;
 		this.price = price;

@@ -8,6 +8,7 @@ public class RoleGameTest {
 		for(int i = 0; i <= 1 ; i++) {
 			h[i].attack();
 			h[i].display();
+			System.out.println("================");
 		}
 	}
 }

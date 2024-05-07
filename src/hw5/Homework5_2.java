@@ -15,12 +15,12 @@ public class Homework5_2 {
 		for (int i = 1; i <= 10; i++) {
 			random = (int) (Math.random() * (101 - changnum));
 			System.out.print(array[random] + "\t");
-			avg += array[random];
-			num = array[random];
-			array[random] = array[100 - changnum];
-			array[100 - changnum] = num;
-			changnum++;
+			avg += array[random];						// 將亂數結果給avg
+			num = array[random];						
+			array[random] = array[100 - changnum];		// 已出現過的亂數跟INDEX最後面的數字做交換
+			array[100 - changnum] = num;				
+			changnum++;			
 		}
-		System.out.println("\n平均值為:" + (avg / 10));
+		System.out.println("\n平均值為:" + (avg / 10));	//將所有亂數的加總算出平均
 	}
 }

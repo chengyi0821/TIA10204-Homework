@@ -4,6 +4,7 @@ public class Homework5_5 {
 	public static void main(String[] args) {
 		genAuthCode();
 	}
+
 	public static void genAuthCode() {
 		System.out.println("本次隨機產生驗證碼為:");
 		int englishUpper = 65;
@@ -20,12 +21,12 @@ public class Homework5_5 {
 				englishLower++;
 			}
 		}
-		for (int i = 1; i <= 8; i++) {	  
-			int ran = (int)(Math.random() * 62) + 1;
-			if(ran <= 9) {
-				System.out.print(random[ran]);	     // 數字0~9
-			}else if(ran <= 35 || ran <=61) {
-				System.out.print((char)random[ran]); // 英文大小寫 A~Z a~z 
+		for (int i = 1; i <= 8; i++) {
+			int ran = (int) (Math.random() * 62) + 1;
+			if (ran <= 9) {
+				System.out.print(random[ran]); // 數字0~9
+			} else if (ran <= 35 || ran <= 61) {
+				System.out.print((char) random[ran]); // 英文大小寫 A~Z a~z
 			}
 		}
 	}

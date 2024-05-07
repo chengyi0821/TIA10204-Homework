@@ -14,11 +14,6 @@ public abstract class Hero implements Display{
 		this.name = name;
 		this.level = level;
 		this.exp = exp;
-	}
-	
-	public abstract void attack();
-	
-	public abstract void move();
-	
-	public abstract void defend();
+	}	
+	public abstract void attack(); 
 }
