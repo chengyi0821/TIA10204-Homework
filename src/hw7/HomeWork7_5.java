@@ -9,8 +9,7 @@ import java.io.ObjectInputStream;
 public class HomeWork7_5 {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
-		File file = new File("File/data/Object.ser");
-		FileInputStream fis = new FileInputStream(file);
+		FileInputStream fis = new FileInputStream("File/data/Object.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
 		try {
