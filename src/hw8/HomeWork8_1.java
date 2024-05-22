@@ -6,7 +6,9 @@ import java.util.Iterator;
 import java.util.List;
 
 public class HomeWork8_1 {
+	
 	public static void main(String[] args) {
+		
 		List<Object> data = new ArrayList<>();
 		
 		data.add(new Integer(100));

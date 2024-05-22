@@ -31,8 +31,7 @@ public class HomeWork8_2 {
 		System.out.println("=================迭代器=================");
 		Iterator<Train> it= set.iterator();
 		while(it.hasNext()) {
-			Train train = it.next();
-			train.getAll();
+			it.next().getAll();
 			} 
 		
 		System.out.println("=================for迴圈=================");
